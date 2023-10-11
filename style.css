@@ -1,0 +1,507 @@
+/* 
+    Author: Madhav Batkale;
+    Theme: Fitness Life;
+    version: 1.0;
+*/
+
+:root{
+    --main-color:#eaa023;
+    --dark: #0c1023;
+    --dark-light: #191f3a;
+    --white: #ffffff;
+    --white-light: #c8c8c8;
+    --shadow: 0 0 15px rgba(0,0,0,0.25);
+    --cursive-font: 'Dancing Script', cursive;
+    scroll-behavior: smooth;
+}
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categories{
+    background-color: var(--dark-light);
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.box-3 {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    transition: 1s;
+}
+.box-3:hover {
+    transform: scale(1.2);
+}
+
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: black;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.error{
+    padding: 1%;
+    color:red;
+}
+.success{
+    padding: 1%;
+    color: green;
+}
+
+
+/* CSSS for navbar section */
+.border{
+    background-color: black;
+}
+
+
+
+.bgcolor-footer{
+    background-color: black;
+}
+
+.bgcolor{
+    background-color:yellow;
+}
+
+.logo{
+    width: 15%;
+    float: left;
+}
+
+.center{
+    
+    align-items: center;
+}
+
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.test-color{
+    text-decoration-color: white;
+}
+
+
+.food-search1{
+    background-image: url(../images/new.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+
+.food-search{
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 14%;
+    float: left;
+    margin: 1%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: var(--dark-light);
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu.container{
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.food-menu-img{
+    width: 10%;
+    float: left;
+    display: block;
+    transition: transform 1s;
+    overflow: hidden;
+}
+
+
+.food-menu-img:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* Register form css */
+/* ==================================== */
+
+.signup_form{
+    text-align:center;
+    padding:30px 30px;
+    background: linear-gradient(30deg,#e9e9e9 49%, #e4e4e4 50%);
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+
+.signup_form h2{
+    font-size: 35px;
+    font-weight:700;
+    color:#444;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.signup_form label{
+    width: 25%;
+    text-align: left;
+    display: inline-block;
+}
+.signup_form .form-control{
+    width: 74%;
+    display: inline-block;
+    border: none;
+    padding: 15px 15px;
+    height: 50px;
+    border-radius: 20px;
+}
+.signup_form .form-control:focus{
+    border: none;
+    box-shadow: 3px 3px 5px #999;
+}
+.signup_form .form-control::placeholder{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.signup_form .btn{
+    width:50%;
+    padding: 7px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #e93700;
+    border-radius:20px;
+    transition:all 0.3s;
+}
+
+.signup_form .btn:hover,
+.signup_form .btn:focus{
+    background-color: #333;
+}
+
+/*----------------------------*\
+	/Register form css
+\*----------------------------*/
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+
+/*--------------
+  fonts 
+  -----------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+.home-text h2{
+    /* font-family: var(--cursive-font); */
+    font-family: var(--cursive-font);
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 5px;
+}
+/* map section  */
+.map{
+    background-color: var(--dark);
+}
+.map h2{
+    font-family: var(--cursive-font);
+    
+    line-height: 75px;
+    margin: 0 0 5px;
+}
+
+
+/* ------------about section------------ */
+.about-section{
+    background-color: var(--dark);
+    /* background-image: url('../images/GIF4.gif'); */
+    /* align-self: center; */
+    
+}
+.about-text,
+.about-img{
+    width: 50%;
+    padding: 0 15px;
+    font-family: var(--cursive-font);
+}
+.about-text h2{
+    color: white;
+    font-family: 30px;
+    text-transform: capitalize;
+    
+}
+.about-text p{
+    
+    color: rgb(197, 20, 20);
+    
+}
+/* .about-text .btn{
+    margin: 15px 0 0;
+} */
+.about-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.about-img .img-box{
+    position:absolute;
+}
+.about-img .img-box ::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    /* border: 3px solid var(--main-color);
+    left:35%;
+    
+    bottom: -55%;
+    animation: spin01 10s linear infinite;
+} */
+}
+
+.about-img .img-box h3{
+    position: absolute;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-80%,-50%);
+    font-size: 30px;
+    font-family: var(--cursive-font);
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+
+.center2 {
+    position: absolute;
+    border-radius: 10px;
+  }
+
+/* .food-menu .container .radius{
+    
+  } */
